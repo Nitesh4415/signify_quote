@@ -3,6 +3,8 @@ import 'package:signify_app/ui/saved_quotes/widgets/share_quote_button.dart';
 
 import '../../../data/model/quote.dart';
 
+
+/// [CardWidget] displays all the saved quote in a list inside card view.
 class CardWidget extends StatelessWidget {
   const CardWidget({
     required this.content,

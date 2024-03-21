@@ -1,6 +1,5 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../data/model/quote.dart';
 import '../../../data/repository/quote_repository.dart';
 

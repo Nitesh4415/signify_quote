@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signify_app/theme/app_text_styles.dart';
 
 import '../../../../data/model/quote.dart';
 import '../../../../theme/app_dimens.dart';
@@ -34,11 +35,7 @@ class TextContainerState extends State<TextContainer> {
           Text(
             widget.randomQuote.content,
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
-            )
+            style: AppTextStyles.quoteText
           ),
           SizedBox(
             height: (MediaQuery.of(context).size.height) *
@@ -47,11 +44,7 @@ class TextContainerState extends State<TextContainer> {
           Text(
             "- ${widget.randomQuote.author}",
             textAlign: TextAlign.right,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-            ),
+            style: AppTextStyles.quoteAuthor
           ),
         ],
       ),

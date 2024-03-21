@@ -8,7 +8,6 @@ import 'package:signify_app/ui/home/widgets/panel_widgets/panel_list_tile.dart';
 
 import '../../../theme/app_dimens.dart';
 import '../../../utils/constants.dart';
-import '../../../utils/email_util.dart';
 import '../../../utils/rating_dialog_widget.dart';
 import '../../../utils/ui_strings.dart';
 
@@ -87,23 +86,14 @@ class _AboutPanelState extends State<AboutPanel> {
                     children: [
                       const PanelDivider(),
                       PanelListTile(
-                        title: UiStrings.writeMeAnEmail,
-                        tileIcon: const Icon(Icons.mail_outline),
-                        onTap: () => EmailUtil.sendEmail(context),
-                      ),
-                      const PanelDivider(),
-                      PanelListTile(
                         title: UiStrings.rateTheApp,
                         tileIcon: const Icon(Icons.rate_review_outlined),
                         onTap: () async {
-                            int stars = await showDialog(
+                             await showDialog(
                                 context: context,
                                 builder: (_) => const RatingDialog()
                             );
 
-                            if (stars == null) return;
-
-                            print('Selected rate stars: $stars');
                         },
                       ),
                     ],

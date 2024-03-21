@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:signify_app/ui/saved_quotes/widgets/card_widget.dart';
-import 'package:signify_app/ui/saved_quotes/widgets/share_quote_button.dart';
-
 import '../../../data/model/quote.dart';
+import '../../../utils/ui_strings.dart';
 
 
 class SavedQuotesList extends StatelessWidget {
@@ -21,9 +20,17 @@ class SavedQuotesList extends StatelessWidget {
       separatorBuilder: (BuildContext context, int index) =>
           const Divider(height: 1),
       itemBuilder: (BuildContext context, int index) {
-        return CardWidget(content: savedQuotes[index].content,
-            author: savedQuotes[index].author,
-            quote:savedQuotes[index]);
+        return InkWell(
+          onTap: (){
+            Navigator.pushReplacementNamed(
+              context,
+              UiStrings.sliderScreenRoute,
+            );
+          },
+          child: CardWidget(content: savedQuotes[index].content,
+              author: savedQuotes[index].author,
+              quote:savedQuotes[index]),
+        );
       },
     );
   }

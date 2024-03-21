@@ -7,6 +7,7 @@ class RatingDialog extends StatefulWidget {
   RatingDialogState createState() => RatingDialogState();
 }
 
+/// [RatingDialog] will display the rating star to rate the quote .
 class RatingDialogState extends State<RatingDialog> {
   int _stars = 0;
 

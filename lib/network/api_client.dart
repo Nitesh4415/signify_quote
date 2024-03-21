@@ -13,15 +13,11 @@ class ApiClient {
     try {
       var url = Uri.parse("http://api.quotable.io/random");
       final response = await http.get(url, headers: {"Content-Type": "application/json"});
-      // final response = await _dio.get('/random');
       final randomQuote = Quote.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
-
 
       return SuccessResponse(randomQuote);
     } on Exception catch (e) {
-          print('Error: $e');
           return ErrorResponse("Error:$e");
-
     }
   }
 }

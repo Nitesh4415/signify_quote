@@ -9,11 +9,6 @@ import '../../bloc/initialization/initialization_cubit.dart';
 import '../home/home_screen.dart';
 
 
-/// [SplashScreen] determines what widget to show:
-/// - [SplashLoadingWidget] is shown with [InitialState] and is always shown first
-/// - [SplashNoNetworkView] is shown when there there is no connection with [NoNetworkOnStartup]
-///   (Does not check if the connection actually provides internet-access)
-/// - [HomeScreen] is shown on [InitializedState]
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 

@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 abstract class AppTextStyles {
   // Quote TextStyle.
   static const quoteText =
-      TextStyle(fontWeight: FontWeight.w500, fontSize: 25, color: Colors.black);
+      TextStyle(fontWeight: FontWeight.w500, fontSize: 25, color: Colors.white);
 
   // Quote TextStyle.
   static const quoteAuthor =
-      TextStyle(fontWeight: FontWeight.w500, fontSize: 20, color: Colors.black);
+      TextStyle(fontWeight: FontWeight.w500, fontSize: 20, color: Colors.white);
 
   // Quote TextStyle.
   static const bodyListTile =

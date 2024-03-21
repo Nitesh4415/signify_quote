@@ -1,6 +1,5 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:signify_app/bloc/saved_quotes_screen/saved_quote_cubit.dart';
 import 'package:signify_app/data/model/quote.dart';
@@ -12,7 +11,6 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   late SavedQuotesCubit savedQuotesCubit;
   late QuoteRepository quoteRepository;
-  final position=Position(longitude: 0.435, latitude: 77.432, timestamp:DateTime.now(), accuracy: 2.0, altitude: 38.76, altitudeAccuracy: 38.0, heading: 32.0, headingAccuracy: 32.067, speed: 84.07, speedAccuracy: 98.97);
   List<Quote> testQuoteList = [
   Quote(
     author: "Nitin Sinha",

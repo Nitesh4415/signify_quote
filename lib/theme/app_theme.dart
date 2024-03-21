@@ -13,7 +13,6 @@ abstract class AppTheme {
       colorScheme: const ColorScheme.dark(
         background: Colors.black,
       ),
-      // backgroundColor: AppColors.backgroundColor,
       canvasColor: AppColors.darkSlateGrey,
       iconTheme: const IconThemeData(color: AppColors.defaultIconColor),
       errorColor: AppColors.errorTextColor,

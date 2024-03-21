@@ -1,17 +1,18 @@
 abstract class UiStrings {
   // App General Strings.
-  static const appName = 'Coding Quotes';
+  static const appName = 'Signify Quotes';
 
   // Navigation Routes.
   static const splashScreenRoute = "/splash_screen";
   static const homeScreenRoute = "/home_screen";
   static const savedQuotesScreenRoute = "/saved_quotes_screen";
+  static const sliderScreenRoute = "/slider_widget";
   static const homeNoNetworkWidgetRoute = "/home_no_network_widget";
 
   // Screen Constants.
   static const savedQuoteScreenTitle = "Saved Quotes";
   static const savedQuoteScreenNoData = "No Saved Quotes!";
-  static const splashText = "Quotez";
+  static const splashText = "Welcome to Signify's motivational quotes";
   static const reloadButtonTitle = "Reload";
   static const noNetworkMessage = "Not connected to the internet";
 
@@ -24,7 +25,5 @@ abstract class UiStrings {
   static const quoteRequestError = "Successfully received a new quote";
 
   // About Tile Titles.
-  static const githubRepoTitle = "Github Repo";
-  static const writeMeAnEmail = "Write me an e-mail";
   static const rateTheApp = "Rate the app";
 }

@@ -1,5 +1,3 @@
-// ignore_for_file: no-magic-number
-
 import 'package:hive/hive.dart';
 
 part 'quote.g.dart';

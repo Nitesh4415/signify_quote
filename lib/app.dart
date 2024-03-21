@@ -6,6 +6,7 @@ import 'package:signify_app/ui/home/home_screen.dart';
 import 'package:signify_app/ui/home/widgets/home_no_network_view.dart';
 import 'package:signify_app/ui/saved_quotes/saved_quotes_screen.dart';
 import 'package:signify_app/ui/splash/splash_screen.dart';
+import 'package:signify_app/utils/slider_widget.dart';
 import 'package:signify_app/utils/ui_strings.dart';
 
 import 'bloc/home_screen/bookmark_button/bookmark_cubit.dart';
@@ -65,6 +66,7 @@ class App extends StatelessWidget {
           routes: {
             UiStrings.splashScreenRoute: (context) => const SplashScreen(),
             UiStrings.homeScreenRoute: (context) => const HomeScreen(),
+            UiStrings.sliderScreenRoute:(context)=>const FullscreenSliderDemo(),
             UiStrings.savedQuotesScreenRoute: (context) =>
                 const SavedQuotesScreen(),
             UiStrings.homeNoNetworkWidgetRoute: (context) =>

@@ -5,11 +5,9 @@ import 'package:signify_app/ui/home/widgets/about_panel.dart';
 import 'package:signify_app/ui/home/widgets/home_content.dart';
 import 'package:signify_app/ui/home/widgets/home_footer.dart';
 import 'package:signify_app/ui/home/widgets/home_header.dart';
-import 'package:signify_app/ui/home/widgets/home_no_network_view.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import '../../bloc/home_screen/home_cubit.dart';
-import '../../bloc/saved_quotes_screen/saved_quote_cubit.dart';
 import '../../theme/app_dimens.dart';
 import '../saved_quotes/saved_quotes_screen.dart';
 
