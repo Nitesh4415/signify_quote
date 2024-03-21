@@ -22,20 +22,22 @@ class CardWidget extends StatelessWidget {
       elevation: 8.0,
       margin: const EdgeInsets.all(4.0),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      child: Column(
+      child:Container(
+        margin: const EdgeInsets.all(6.0),
+        child: Column(
         children: [
           Text(
             content,
             style: const TextStyle(
-              fontSize: 24.0,
-              fontWeight: FontWeight.w700,
+              fontSize: 18.0,
+              fontWeight: FontWeight.w500,
             ),
           ),
           Text(
             textAlign:TextAlign.right,
             author,
             style: const TextStyle(
-              fontSize: 18.0,
+              fontSize: 14.0,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -43,6 +45,7 @@ class CardWidget extends StatelessWidget {
             quote: quote,
           ),)
         ],
+      ),
       ),
     );
 
